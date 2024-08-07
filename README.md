@@ -1,1 +1,2 @@
 # Student-Performance-Prediction
+This project aims to predict student performance based on several factors using linear regression. The dataset used is the "Student Performance" dataset, which includes various attributes related to student demographics, social and academic performance. The goal is to predict the final grade (G3) based on features such as first period grade (G1), second period grade (G2), health, and age.
