@@ -1,0 +1,20 @@
+Detailed Description
+Data Loading and Preprocessing:
+
+The dataset is read from a CSV file using Pandas.
+The relevant columns ("G1", "G2", "G3", "health", "age") are selected for analysis.
+The feature matrix x is created by dropping the target variable "G3" from the dataframe.
+The target variable y is set as the "G3" column.
+Model Training:
+
+The dataset is split into training and testing sets using an 90-10 split.
+A linear regression model is trained multiple times (30 iterations) to find the best model based on accuracy.
+The model with the highest accuracy is saved using pickle.
+Model Evaluation:
+
+The best saved model is loaded from the pickle file.
+The model's coefficients and intercept are printed.
+Predictions are made on the test data and compared with actual values.
+Visualization:
+
+A scatter plot is created to visualize the relationship between one of the features ("G2") and the target variable ("G3").
